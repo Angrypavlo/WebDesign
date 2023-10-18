@@ -9,10 +9,10 @@ header h1 {
     color: cadetblue;
 }
 
-navbar div {
+nav div {
     background-color: #b78aa0;
 }
-navbar div li {
+nav div li {
     display: inline-block;
     margin: 0.5em;
 }
