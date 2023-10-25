@@ -26,8 +26,11 @@ nav div {
 nav div li {
     display: inline-block;
     margin: 0.5em;
+    font-size: 16pt;
+    font-family: sans-serif;
 }
 
+/* general */
 body{
     margin: 40px auto;
     max-width: 1400px;
@@ -56,6 +59,8 @@ h1,h2,h3{
 .content p { /* main paragraphs */
     text-align: justify;
     text-justify: inter-word;
+    font-size: 14pt;
+    font-family: sans-serif;
 }
 
 /* history page */
@@ -71,6 +76,31 @@ h1,h2,h3{
     margin: 15px 0px 5px 25px;
 }
 
+/* footer items */
+footer div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+footer div li {
+    list-style-type: none;
+}
+footer div li a {
+    font-size: 16pt;
+    font-family: sans-serif;
+}
+img.img-logo {
+    height: 35px;
+    width: auto;
+}
+footer div.copyright-notice {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 12pt;
+    font-family: sans-serif;
+}
 
 /* junk from the lectures */
 
@@ -94,4 +124,5 @@ section .my-class {
 
 table img {
     padding: 10px;
+    
 }
