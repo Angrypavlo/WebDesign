@@ -58,6 +58,19 @@ h1,h2,h3{
     text-justify: inter-word;
 }
 
+/* history page */
+.content img.img-history {
+    width: 60%;
+}
+.content img.img-left {
+    float: left;
+    margin: 15px 25px 5px 0px;
+}
+.content img.img-right {
+    float: right;
+    margin: 15px 0px 5px 25px;
+}
+
 
 /* junk from the lectures */
 
