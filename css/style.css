@@ -42,11 +42,21 @@ h1,h2,h3{
   line-height: 1.2
 }
 
+/* content pages */
+.context h1,h2,h3 {
+    line-height: 1.5;
+}
+.content h3 {
+    text-align: center;
+}
 .content img {
     width: 100%;
     height: auto;
 }
-
+.content p { /* main paragraphs */
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 
 /* junk from the lectures */
