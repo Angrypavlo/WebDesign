@@ -1,21 +1,23 @@
-header div {
+header {
     overflow: auto;
 }
-
-header div img {
-    float: right;
-    width: 85%;
-    height: auto;
+header div {
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center;
 }
-
 header div h1 {
-    float: left;/*
-    top: 18px;
-    left: 18px;*/
-    
+    float: left;
+    width: 20%;
+
+    text-align: center;
     font-size: 48px;
     font-family: Tahoma, Helvetica, sans-serif;
     color: cadetblue;
+}
+header div img {
+    float: right;
+    width: 80%;
 }
 
 nav div {
