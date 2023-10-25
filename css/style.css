@@ -1,8 +1,17 @@
-header img {
-    display: inline-block;
+header div {
+    overflow: auto;
 }
-header h1 {
-    display: inline-block;
+
+header div img {
+    float: right;
+    width: 85%;
+    height: auto;
+}
+
+header div h1 {
+    float: left;/*
+    top: 18px;
+    left: 18px;*/
     
     font-size: 48px;
     font-family: Tahoma, Helvetica, sans-serif;
