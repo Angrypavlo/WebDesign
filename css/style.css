@@ -82,3 +82,6 @@ section .my-class {
 table img {
     padding: 10px;
 }
+table, th, td{
+    border: 1px solid black;
+}
