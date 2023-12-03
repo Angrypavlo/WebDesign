@@ -5,13 +5,14 @@
 
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    background-size: cover;
+    background-color:rgb(197, 161, 146);
 }
 .wrapper {
     margin-right: auto;
     margin-left:  auto;
 
-    max-width: 1080px; /* maybe too small */
+    max-width: 1200px; /* maybe too small */
 
     padding-right: 10px;
     padding-left:  10px;
@@ -24,10 +25,16 @@ header {
     position: sticky;
     z-index: 1;
     top:0;
-    background-color: white;
+    background-color: rgba(230, 208, 198, 0.8);
+    text-align: center;
+    border-radius: 5px;
 }
 
 /* header logo */
+#logo-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
 
 #logo {
     display: flex;
@@ -35,7 +42,11 @@ header {
     letter-spacing: 1em;
     text-transform: uppercase;
     flex:1;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.5em;
 }
+
 #logo h1 {
     font-weight: normal;
     font-size: 2em;
@@ -71,6 +82,7 @@ nav a {
     font-size: 4em;
     border: none;
     outline: none;
+    margin-right: 0.2em;
   }
 
 .dropdown-content {
