@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div id="header-text">
-                <h1> - Sveiki -</h1>
+                <h1> - Events -</h1>
             </div>
             <div>
                 <nav>
@@ -34,16 +34,65 @@
                 </nav>
             </div>
         </header>
-        
+
+        <section class="expandable-items">
+            <button class="expandable-item-header">
+                <div class="expandable-header-left">
+                    <div>
+                        <h1> 01.12.23 </h1>
+                    </div>
+                    <div>
+                        <h2> The exhibition "Form of Word" by Danielius Sodeika </h2>
+                    </div>
+                </div>
+                <div class="expandable-header-right">
+                <img class="event-image" src="img/event_0112.jpg">
+            </div>
+            </button>
+            <div class="expanded-event-text">
+                <p>
+                    Danielius Sodeika's solo exhibition "Form of Word" presents sculptural objects from recent years,
+                    mostly
+                    made of wood or, in search of an extension of meanings, in duet with another material. The forms of
+                    the
+                    works are minimalist - it seems that the author listens to nature, follows it, and intervenes only
+                    to
+                    accentuate what he has heard or understood.
+                    This exhibition is a dialogue between form and word. Daniel is a linguist by nature and is always
+                    looking for the meanings of words in his everyday life, so the objects that emerge from them appear
+                    naturally, in the course of his work.
+
+                </p>
+            </div>
+        </section>
+
+
         <footer>
-			<div id="footer-links">
-				<a href="https://facebook.com"><img src="img/logo-facebook.png" /></a>
-				<a href="https://instagram.com"><img src="img/logo-instagram.png" /></a>
-				<a href="https://youtube.com"><img src="img/logo-youtube.png" /></a>
-				<a href="emailto:test@email.com"><img src="img/logo-email.png" /></a>
-				<a href="tel:+370 616 23123"><img src="img/logo-phone.png" /></a>
-			</div>
-			<div class="copyright-notice">© All rights reserved 2023 </div>
-		</footer>
+            <div id="footer-links">
+                <a href="https://facebook.com"><img src="img/logo-facebook.png" /></a>
+                <a href="https://instagram.com"><img src="img/logo-instagram.png" /></a>
+                <a href="https://youtube.com"><img src="img/logo-youtube.png" /></a>
+                <a href="emailto:test@email.com"><img src="img/logo-email.png" /></a>
+                <a href="tel:+370 616 23123"><img src="img/logo-phone.png" /></a>
+            </div>
+            <div class="copyright-notice">© All rights reserved 2023 </div>
+        </footer>
     </div>
+
+    <script>
+        var acc = document.getElementsByClassName("expandable-item-header");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
