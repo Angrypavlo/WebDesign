@@ -388,3 +388,23 @@ footer img {
     }
 }
 
+/** about/history **/
+#history-content {
+    span {
+        font-size: 16pt;
+        text-align: justify;
+        display: block;
+        overflow: auto;
+    }
+    img {
+        width: 50%;
+    }
+}
+.img-left {
+    float: left;
+    margin: 10px 20px 5px 0px;
+}
+.img-right {
+    float: right;
+    margin: 10px 0px 5px 20px;
+}
