@@ -627,33 +627,35 @@ table{
 }
 
 /** about/history **/
-#history-content {
-    span {
-        font-size: 16pt;
-        text-align: justify;
-        display: block;
-        overflow: auto;
-    }
-    img {
-        width: 50%;
-    }
+#history-content div {
+    background-color: #b8624f;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-bottom: 30px;
 }
-.img-left {
-    float: left;
-    margin: 10px 20px 5px 0px;
+#history-content div h2 {
+    text-align: center;
 }
-.img-right {
-    float: right;
-    margin: 10px 0px 5px 20px;
+#history-content div p {
+    font-size: 16pt;
+    text-align: justify;
+
+    column-count: 2;
+    column-gap: 35px;
+}
+#history-content div img {
+    width: 100%;
+    padding: 15px 0;
 }
 @media only screen and (max-width: 768px) {
-    #history-conten<t {
-        span {
-            font-size: 13pt;
-        }
-        img {
-            width: 100%;
-            float: none;
-        }
+    #history-content div {
+        padding: 5px 15px;
+        border-radius: 15px;
+    }
+    #history-content div p {
+        font-size: 13pt;
+        column-count: 1;
     }
 }
+
