@@ -359,32 +359,30 @@ footer img {
     padding: 10px 35px;
     border-radius: 30px;
     margin-bottom: 30px;
-
-    h3 {
+}
+.sports-item h3 {
         color: white;
         font-size: 24pt;
         text-align: center;
-    }
-    img {
+}
+.sports-item img {
         width: 100%;
         margin: auto;
         display: block;
-    }
-    p {
+}
+.sports-item p {
         color: white;
         font-size: 16pt;
         text-align: justify;
-    }
 }
 @media only screen and (max-width: 768px) {
     /* reduce radii and padding for mobile */
     .sports-item {
         padding: 5px 15px;
         border-radius: 15px;
-        
-        p {
-            font-size: 13pt;
-        }
+    }
+    .sports-item p {
+        font-size: 13pt;
     }
 }
 
@@ -407,4 +405,15 @@ footer img {
 .img-right {
     float: right;
     margin: 10px 0px 5px 20px;
+}
+@media only screen and (max-width: 768px) {
+    #history-conten<t {
+        span {
+            font-size: 13pt;
+        }
+        img {
+            width: 100%;
+            float: none;
+        }
+    }
 }
