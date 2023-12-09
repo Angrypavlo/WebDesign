@@ -9,11 +9,41 @@ body {
     background-color: rgb(197, 161, 146);
 }
 
+/* general font settings */
+
+p {
+    text-align: justify;
+    color: black;
+    font-size: large;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: x-large;
+    text-align: center;
+}
+
+.light {
+    color: white;
+}
+
+.centered {
+    text-align: center;
+    padding: 1em 3em;
+}
+
+
 .wrapper {
     margin-right: auto;
     margin-left: auto;
 
-    max-width: 1200px;
+    max-width: 1300px;
 
     padding-right: 10px;
     padding-left: 10px;
@@ -30,11 +60,13 @@ header {
     text-align: center;
     border-radius: 5px;
 }
+
 /* header logo */
 #logo-wrapper {
     display: flex;
     justify-content: space-around;
 }
+
 #logo {
     display: flex;
     flex-direction: column;
@@ -45,6 +77,7 @@ header {
     margin-bottom: auto;
     margin-left: 0.5em;
 }
+
 #logo h1 {
     font-weight: normal;
     font-size: 2em;
@@ -57,9 +90,6 @@ header {
 #header-text {
     font-style: italic;
     font-weight: lighter;
-    text-transform: uppercase;
-    font-size: 1em;
-    color: #b8624f(124, 81, 64);
 }
 
 /* Header navigation dropdown menu */
@@ -112,20 +142,24 @@ nav:hover .dropdown-content {
     display: flex;
     height: fit-content;
 }
+
 /* adjustements for header stuff */
 @media only screen and (max-width: 600px) {
     .wrapper {
         padding-left: 5px;
         padding-right: 5px;
     }
-    #logo {   
-    }
+
+    #logo {}
+
     #logo h1 {
         font-size: 1.5em;
     }
+
     #header-text {
         font-size: 0.75em;
     }
+
     #dropdown-icon {
         font-size: 3em;
     }
@@ -153,47 +187,49 @@ a:active {
     text-align: center;
     color: white;
 }
-/* Centered text */
+
+/* Centered text on picture*/
 #home-welcome>div>div {
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 #home-welcome img {
     width: 100%;
     filter: brightness(80%);
     border-radius: 10px;
 }
+
 /* style text */
 #home-welcome-title {
-    font-size: 60pt;
-}
-#home-welcome-slogan {
-    font-size: 20pt;
-    font-weight: lighter;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: 400%;
 }
 
-/** Introduction text **/
-#home-intro p {
-    font-size: 20pt;
+#home-welcome-slogan {
     font-weight: lighter;
+    letter-spacing: 0.1em;
+}
+
+#home-intro p {
+    font-size: xx-large;
     text-align: center;
-    padding: 1em 3em;
 }
 
 @media only screen and (max-width: 600px) {
-    #home-welcome > div > div {
+    #home-welcome>div>div {
         top: 35%;
     }
+
     #home-welcome-title {
         font-size: 40pt;
     }
+
     #home-welcome-slogan {
         font-size: 16pt;
     }
+
     #home-intro p {
         font-size: 15pt;
         padding: 0.5em 0.5em;
@@ -254,101 +290,111 @@ a:active {
     height: 200px;
     border: 1px solid #f1f1f1;
 }
+
 #home-links .flip-box {
     background-color: transparent;
     width: 610px;
     height: 200px;
-    border: 1px solid #f1f1f1
-    ;
+    border: 1px solid #f1f1f1;
 }
-  
-  #home-links .flip-box-inner {
+
+#home-links .flip-box-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  #home-links .card2:hover .flip-box-inner {
+}
+
+#home-links .card2:hover .flip-box-inner {
     transform: rotateY(180deg);
-  }
-  #home-links .card1:hover .flip-box-inner {
+}
+
+#home-links .card1:hover .flip-box-inner {
     transform: rotateY(180deg);
-  }
-  
-  #home-links .flip-box-front, .flip-box-back {
+}
+
+#home-links .flip-box-front,
+.flip-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
-  
-  #home-links .flip-box-front {
+}
+
+#home-links .flip-box-front {
     background-color: #bbb;
     color: black;
-  }
-  
-  #home-links .flip-box-back {
+}
+
+#home-links .flip-box-back {
     background-color: #555;
     color: white;
     transform: rotateY(180deg);
-  }
+}
+
 /**** footer ****/
 footer {
     padding: 40px;
 }
+
 footer #footer-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
+
 footer img {
     height: 50px;
     width: 50px;
 }
+
 .copyright-notice {
     padding-top: 30px;
-    font-size: 15pt;
-    text-transform: uppercase;
-    text-align: center;
+    font-weight: lighter;
 }
+
 @media only screen and (max-width: 600px) {
     footer #footer-links {
         gap: 30px;
     }
+
     footer img {
         height: 35px;
         width: 35px;
     }
+
     .copyright-notice {
         font-size: 12pt;
     }
 }
 
-table, th, td{
+table,
+th,
+td {
     border: 1px solid black;
-    font-family:"Courier New", Courier, monospace; font-size:100%;
 
 }
-table{
+
+table {
     width: 100%;
 }
 
-.container{
+.container {
     position: relative;
     text-align: center;
     color: white;
 }
+
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 /* Event page expandable events*/
 
@@ -386,16 +432,13 @@ table{
 }
 
 #event-date {
-    font-size: 3vw;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 #event-name {
-    text-transform: uppercase;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 1;
 }
 
 .expandable-header-right {
@@ -430,7 +473,6 @@ table{
     margin-right: 7%;
     column-count: 2;
     column-gap: 5%;
-    text-align: justify;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -449,14 +491,9 @@ table{
     .expanded-event-text {
         column-count: 1;
     }
-  }
+}
 
 /**** content pages ****/
-/** general **/
-.content > p {
-    font-size: 16pt;
-    text-align: center;
-}
 
 /** sports **/
 .sports-item {
@@ -465,27 +502,33 @@ table{
     border-radius: 30px;
     margin-bottom: 30px;
 }
+
 .sports-item h3 {
-        color: white;
-        font-size: 24pt;
-        text-align: center;
+    color: white;
+    font-size: 24pt;
+    text-align: center;
 }
+
 .sports-item img {
-        width: 100%;
-        margin: auto;
-        display: block;
+    width: 100%;
+    margin: auto;
+    display: block;
 }
+
 .sports-item p {
-        color: white;
-        font-size: 16pt;
-        text-align: justify;
+    color: white;
+    font-size: 16pt;
+    text-align: justify;
 }
+
 @media only screen and (max-width: 768px) {
+
     /* reduce radii and padding for mobile */
     .sports-item {
         padding: 5px 15px;
         border-radius: 15px;
     }
+
     .sports-item p {
         font-size: 13pt;
     }
@@ -499,23 +542,28 @@ table{
         display: block;
         overflow: auto;
     }
+
     img {
         width: 50%;
     }
 }
+
 .img-left {
     float: left;
     margin: 10px 20px 5px 0px;
 }
+
 .img-right {
     float: right;
     margin: 10px 0px 5px 20px;
 }
+
 @media only screen and (max-width: 768px) {
     #history-content {
         span {
             font-size: 13pt;
         }
+
         img {
             width: 100%;
             float: none;
@@ -622,11 +670,11 @@ table{
     .expanded-event-text {
         column-count: 1;
     }
-  }
+}
 
 /**** content pages ****/
 /** general **/
-.content > p {
+.content>p {
     font-size: 16pt;
     text-align: center;
 }
@@ -638,27 +686,33 @@ table{
     border-radius: 30px;
     margin-bottom: 30px;
 }
+
 .sports-item h3 {
-        color: white;
-        font-size: 24pt;
-        text-align: center;
+    color: white;
+    font-size: 24pt;
+    text-align: center;
 }
+
 .sports-item img {
-        width: 100%;
-        margin: auto;
-        display: block;
+    width: 100%;
+    margin: auto;
+    display: block;
 }
+
 .sports-item p {
-        color: white;
-        font-size: 16pt;
-        text-align: justify;
+    color: white;
+    font-size: 16pt;
+    text-align: justify;
 }
+
 @media only screen and (max-width: 768px) {
+
     /* reduce radii and padding for mobile */
     .sports-item {
         padding: 5px 15px;
         border-radius: 15px;
     }
+
     .sports-item p {
         font-size: 13pt;
     }
@@ -672,9 +726,11 @@ table{
     border-radius: 30px;
     margin-bottom: 30px;
 }
+
 #history-content div h2 {
     text-align: center;
 }
+
 #history-content div p {
     font-size: 16pt;
     text-align: justify;
@@ -682,18 +738,20 @@ table{
     column-count: 2;
     column-gap: 35px;
 }
+
 #history-content div img {
     width: 100%;
     padding: 15px 0;
 }
+
 @media only screen and (max-width: 768px) {
     #history-content div {
         padding: 5px 15px;
         border-radius: 15px;
     }
+
     #history-content div p {
         font-size: 13pt;
         column-count: 1;
     }
 }
-
