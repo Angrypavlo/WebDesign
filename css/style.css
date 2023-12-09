@@ -1,4 +1,4 @@
-/* general stuff */
+/** General rules for all pages **/
 * {
     box-sizing: border-box;
 }
@@ -9,7 +9,7 @@ body {
     background-color: rgb(197, 161, 146);
 }
 
-/* general font settings */
+/* Basic font settings */
 
 p {
     text-align: justify;
@@ -38,6 +38,7 @@ h2 {
     padding: 1em 3em;
 }
 
+/* Page wrapper */
 
 .wrapper {
     margin-right: auto;
@@ -49,7 +50,7 @@ h2 {
     padding-left: 10px;
 }
 
-/* header */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -61,7 +62,7 @@ header {
     border-radius: 5px;
 }
 
-/* header logo */
+/* Header logo */
 #logo-wrapper {
     display: flex;
     justify-content: space-around;
@@ -85,8 +86,7 @@ header {
     margin-bottom: 0;
 }
 
-
-/* header text */
+/* Header text */
 #header-text {
     font-style: italic;
     font-weight: lighter;
@@ -143,7 +143,7 @@ nav:hover .dropdown-content {
     height: fit-content;
 }
 
-/* adjustements for header stuff */
+/* Adjustments for header on smaller screen*/
 @media only screen and (max-width: 600px) {
     .wrapper {
         padding-left: 5px;
@@ -165,7 +165,44 @@ nav:hover .dropdown-content {
     }
 }
 
-/** Link hovering **/
+/* Footer settings*/
+footer {
+    padding: 40px;
+}
+
+footer #footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+.copyright-notice {
+    padding-top: 30px;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 600px) {
+    footer #footer-links {
+        gap: 30px;
+    }
+
+    footer img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .copyright-notice {
+        font-size: 12pt;
+    }
+}
+
+/* Link hovering settings */
 a:link,
 a:visited {
     color: black;
@@ -181,7 +218,7 @@ a:active {
 
 /**** Home page ****/
 
-/** Image with text on top **/
+/** Big image with text on top **/
 #home-welcome>div {
     position: relative;
     text-align: center;
@@ -202,7 +239,7 @@ a:active {
     border-radius: 10px;
 }
 
-/* style text */
+/* Special font settings for decorating index page*/
 #home-welcome-title {
     font-size: 400%;
 }
@@ -236,7 +273,7 @@ a:active {
     }
 }
 
-/** Link boxes/cards **/
+/** Flipping cards with links **/
 #home-links {
     background-color: #b8624f;
     display: flex;
@@ -275,16 +312,15 @@ a:active {
 }
 
 #home-links .card1 {
+    /* Card 1 means smaller card */
     background-color: transparent;
     width: 300px;
     height: 200px;
     border: 1px solid #f1f1f1;
-
-
-
 }
 
 #home-links .card2 {
+    /* Card 1 means bigger card */
     background-color: transparent;
     width: 610px;
     height: 200px;
@@ -335,42 +371,7 @@ a:active {
     transform: rotateY(180deg);
 }
 
-/**** footer ****/
-footer {
-    padding: 40px;
-}
-
-footer #footer-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-footer img {
-    height: 50px;
-    width: 50px;
-}
-
-.copyright-notice {
-    padding-top: 30px;
-    font-weight: lighter;
-}
-
-@media only screen and (max-width: 600px) {
-    footer #footer-links {
-        gap: 30px;
-    }
-
-    footer img {
-        height: 35px;
-        width: 35px;
-    }
-
-    .copyright-notice {
-        font-size: 12pt;
-    }
-}
+/* Rules for creating tables*/
 
 table,
 th,
@@ -396,7 +397,9 @@ table {
     transform: translate(-50%, -50%);
 }
 
-/* Event page expandable events*/
+/**** Event page ****/
+
+/* Expandable event boxes*/
 
 .expandable-items {
     width: 100%;
@@ -477,6 +480,7 @@ table {
     margin-bottom: 2%;
 }
 
+/* Hovering makes event darker */
 .active,
 .expandable-items::after {
     border-radius: 8px 8px 0 0;
@@ -488,14 +492,14 @@ table {
 }
 
 @media only screen and (max-width: 600px) {
+
+    /* Push text into one column on smaller screen*/
     .expanded-event-text {
         column-count: 1;
     }
 }
 
-/**** content pages ****/
-
-/** sports **/
+/**** Sports page ****/
 .sports-item {
     background-color: #b8624f;
     padding: 10px 35px;
@@ -503,22 +507,10 @@ table {
     margin-bottom: 30px;
 }
 
-.sports-item h3 {
-    color: white;
-    font-size: 24pt;
-    text-align: center;
-}
-
 .sports-item img {
     width: 100%;
     margin: auto;
     display: block;
-}
-
-.sports-item p {
-    color: white;
-    font-size: 16pt;
-    text-align: justify;
 }
 
 @media only screen and (max-width: 768px) {
@@ -530,19 +522,12 @@ table {
     }
 
     .sports-item p {
-        font-size: 13pt;
+        font-size: smaller;
     }
 }
 
-/** about/history **/
+/**** About Kaunas (History) page ****/
 #history-content {
-    span {
-        font-size: 16pt;
-        text-align: justify;
-        display: block;
-        overflow: auto;
-    }
-
     img {
         width: 50%;
     }
@@ -558,183 +543,14 @@ table {
     margin: 10px 0px 5px 20px;
 }
 
-@media only screen and (max-width: 768px) {
-    #history-content {
-        span {
-            font-size: 13pt;
-        }
-
-        img {
-            width: 100%;
-            float: none;
-        }
-    }
-}
-
-/* Event page expandable events*/
-
-.expandable-items {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.expandable-item-header {
-    cursor: pointer;
-    cursor: pointer;
-    border: none;
-    border-radius: 8px;
-    transition: 0.4s;
-    display: flex;
-    box-sizing: border-box;
-    min-width: 0;
-    width: 100%;
-    padding-inline: 0;
-    padding-block: 0;
-    margin-top: 16px;
-    background-color: #b8624f;
-    color: white;
-}
-
-.expandable-header-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    min-width: 0;
-    max-height: 30%;
-}
-
-#event-date {
-    font-size: 3vw;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-#event-name {
-    text-transform: uppercase;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 1;
-}
-
-.expandable-header-right {
-    flex: 2;
-    text-align: right;
-    margin: 0;
-    min-width: 0;
-    height: 100%;
-}
-
-.event-image {
-    border-radius: 8px;
-    max-width: 100%;
-    height: 30%;
-    vertical-align: bottom;
-    border: 5px solid #b8624f;
-}
-
-.expanded-event-container {
-    max-height: 0;
-    background-color: rgba(230, 208, 198);
-    border-radius: 0 0 8px 8px;
-    overflow: hidden;
-
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    transition: max-height 0.2s ease-out;
-}
-
-.expanded-event-text {
-    margin-left: 7%;
-    margin-right: 7%;
-    column-count: 2;
-    column-gap: 5%;
-    text-align: justify;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.active,
-.expandable-items::after {
-    border-radius: 8px 8px 0 0;
-}
-
-.active,
-.expandable-items:hover {
-    filter: brightness(90%)
-}
-
-@media only screen and (max-width: 600px) {
-    .expanded-event-text {
-        column-count: 1;
-    }
-}
-
-/**** content pages ****/
-/** general **/
-.content>p {
-    font-size: 16pt;
-    text-align: center;
-}
-
-/** sports **/
-.sports-item {
-    background-color: #b8624f;
-    padding: 10px 35px;
-    border-radius: 30px;
-    margin-bottom: 30px;
-}
-
-.sports-item h3 {
-    color: white;
-    font-size: 24pt;
-    text-align: center;
-}
-
-.sports-item img {
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-
-.sports-item p {
-    color: white;
-    font-size: 16pt;
-    text-align: justify;
-}
-
-@media only screen and (max-width: 768px) {
-
-    /* reduce radii and padding for mobile */
-    .sports-item {
-        padding: 5px 15px;
-        border-radius: 15px;
-    }
-
-    .sports-item p {
-        font-size: 13pt;
-    }
-}
-
-/** about/history **/
 #history-content div {
     background-color: #b8624f;
-    color: white;
     padding: 10px 35px;
     border-radius: 30px;
     margin-bottom: 30px;
-}
-
-#history-content div h2 {
-    text-align: center;
 }
 
 #history-content div p {
-    font-size: 16pt;
-    text-align: justify;
-
     column-count: 2;
     column-gap: 35px;
 }
@@ -745,13 +561,19 @@ table {
 }
 
 @media only screen and (max-width: 768px) {
+    #history-content {
+        img {
+            width: 100%;
+            float: none;
+        }
+    }
+
     #history-content div {
         padding: 5px 15px;
         border-radius: 15px;
     }
 
     #history-content div p {
-        font-size: 13pt;
         column-count: 1;
     }
 }
