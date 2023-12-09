@@ -1,12 +1,12 @@
 # Moritz
+- Main
 - History
 - Sports
-...
 
 # Ines
 - Events
-...
+- Sightseeing
 
 # Pavlo
-- Accomodation and Transport
-...
+- Accommodation
+- Transport
