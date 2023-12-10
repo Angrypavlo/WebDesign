@@ -38,6 +38,37 @@
 
 
 
+        <div class="expandable-items" id="sightseeing-small-block">
+            <button class="expandable-item-header">
+                <div class="expandable-header-left">
+                    <div>
+                        <h2> V. Putvinskio g. 64, Kaunas</h2>
+                    </div>
+                </div>
+                <div class="expandable-header-right">
+                    <div>
+                        <h1> Devil's Museum </h1>
+
+                    </div>
+                    <img class="event-image" src="img/sights/devils_museum.png">
+
+                </div>
+            </button>
+            <div class="expanded-event-container">
+                <p class="expanded-event-text">
+                    The Devils’ Museum, which is included in the list of the most unique museums worldwide,
+                    stores about 3000 horned exhibits from all over the world: pieces of visual arts and crafts,
+                    souvenirs,
+                    masks. It is an opportunity to take a closer look at the mysterious mythological creature and
+                    different
+                    forms of its depiction in as many as 70 countries of the world. The collection was started by
+                    Antanas
+                    Žmuidzinavičius, a famous Lithuanian artist, and there has been a nice tradition that every
+                    visitor may bring a devil as a gift to the museum.
+                </p>
+            </div>
+        </div>
+
 
 
 
@@ -56,6 +87,22 @@
         </footer>
     </div>
 
+    <script>
+        var acc = document.getElementsByClassName("expandable-item-header");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

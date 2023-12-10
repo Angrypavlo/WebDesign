@@ -15,17 +15,18 @@ p {
     text-align: justify;
     color: black;
     font-size: large;
+    column-count: 2;
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: xx-large;
+    font-size: 2wv;
     text-align: center;
 }
 
 h2 {
     text-transform: uppercase;
-    font-size: x-large;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -35,6 +36,7 @@ h2 {
 
 .centered {
     text-align: center;
+    column-count: 1;
 }
 
 /* Page wrapper */
@@ -142,31 +144,10 @@ nav:hover .dropdown-content {
     height: fit-content;
 }
 
-/* Adjustments for header on smaller screen*/
-@media only screen and (max-width: 600px) {
-    .wrapper {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    #logo {}
-
-    #logo h1 {
-        font-size: 1.5em;
-    }
-
-    #header-text {
-        font-size: 0.75em;
-    }
-
-    #dropdown-icon {
-        font-size: 3em;
-    }
-}
-
 /* Footer settings*/
 footer {
     padding: 40px;
+    flex-shrink: 0;
 }
 
 footer #footer-links {
@@ -184,21 +165,6 @@ footer img {
 .copyright-notice {
     padding-top: 30px;
     font-weight: lighter;
-}
-
-@media only screen and (max-width: 600px) {
-    footer #footer-links {
-        gap: 30px;
-    }
-
-    footer img {
-        height: 35px;
-        width: 35px;
-    }
-
-    .copyright-notice {
-        font-size: 12pt;
-    }
 }
 
 /* Link hovering settings */
@@ -249,27 +215,9 @@ a:active {
 }
 
 #home-intro p {
-    font-size: xx-large;
     text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-    #home-welcome>div>div {
-        top: 35%;
-    }
-
-    #home-welcome-title {
-        font-size: 40pt;
-    }
-
-    #home-welcome-slogan {
-        font-size: 16pt;
-    }
-
-    #home-intro p {
-        font-size: 15pt;
-        padding: 0.5em 0.5em;
-    }
+    font-size: 2em;
+    column-count: 1;
 }
 
 /** Flipping cards with links **/
@@ -401,7 +349,6 @@ table {
 /* Expandable event boxes*/
 
 .expandable-items {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -473,7 +420,6 @@ table {
 .expanded-event-text {
     margin-left: 7%;
     margin-right: 7%;
-    column-count: 2;
     column-gap: 5%;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -490,14 +436,6 @@ table {
     filter: brightness(90%)
 }
 
-@media only screen and (max-width: 600px) {
-
-    /* Push text into one column on smaller screen*/
-    .expanded-event-text {
-        column-count: 1;
-    }
-}
-
 /**** Sports page ****/
 .sports-item {
     background-color: #b8624f;
@@ -510,19 +448,6 @@ table {
     width: 100%;
     margin: auto;
     display: block;
-}
-
-@media only screen and (max-width: 768px) {
-
-    /* reduce radii and padding for mobile */
-    .sports-item {
-        padding: 5px 15px;
-        border-radius: 15px;
-    }
-
-    .sports-item p {
-        font-size: smaller;
-    }
 }
 
 /**** About Kaunas (History) page ****/
@@ -549,17 +474,64 @@ table {
     margin-bottom: 30px;
 }
 
-#history-content div p {
-    column-count: 2;
-    column-gap: 35px;
-}
-
 #history-content div img {
     width: 100%;
     padding: 15px 0;
 }
 
-@media only screen and (max-width: 768px) {
+/**** Sightseeing page ****/
+
+#sightseeing-small-block {
+    width: 50%;
+    float: left;
+    overflow: visible;
+}
+
+/** Smaller screen adjustments **/
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* Text settings */
+    p {
+        column-count: 1;
+    }
+
+    /* Dropdown menu settings */
+    #dropdown-icon {
+        font-size: 3em;
+    }
+
+    /* Footer settings */
+    footer #footer-links {
+        gap: 30px;
+    }
+
+    footer img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .copyright-notice {
+        font-size: 12pt;
+    }
+
+    /* Index page */
+    #home-welcome>div>div {
+        top: 35%;
+    }
+
+    #home-welcome-title {
+        font-size: 40pt;
+    }
+
+    #home-welcome-slogan {
+        font-size: 16pt;
+    }
+
+    /* History page */
     #history-content {
         img {
             width: 100%;
@@ -570,9 +542,5 @@ table {
     #history-content div {
         padding: 5px 15px;
         border-radius: 15px;
-    }
-
-    #history-content div p {
-        column-count: 1;
     }
 }
