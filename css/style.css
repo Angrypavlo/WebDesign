@@ -53,7 +53,8 @@ h2 {
     padding-right: 10px;
     padding-left: 10px;
 
-    flex: 1 1 auto; /*grow vertically*/
+    flex: 1 1 auto;
+    /*grow vertically*/
 }
 
 /* Header */
@@ -397,11 +398,9 @@ table {
 .expandable-header-vertical {
     flex: 1;
     text-align: center;
-    margin: 0;
-    min-width: 0;
-    max-height: 30%;
     flex-direction: column;
     display: flex;
+    min-width: 0;
 }
 
 #event-date {
@@ -455,10 +454,11 @@ table {
 /**** Sightseeing page ****/
 
 #sightseeing-small-block {
-    width: 50%;
     float: left;
     overflow: visible;
     padding: auto;
+    flex: 1;
+    flex-basis: 50%;
 }
 
 #sightseeing-small-block p {
@@ -467,6 +467,17 @@ table {
 
 #flex-1-item {
     flex: 1;
+}
+
+.sight-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#sight-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /**** Sports page ****/
