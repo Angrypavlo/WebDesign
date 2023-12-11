@@ -526,7 +526,7 @@ table {
 }
 
 /** Smaller screen adjustments **/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .wrapper {
         padding-left: 5px;
         padding-right: 5px;
