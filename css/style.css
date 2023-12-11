@@ -526,10 +526,11 @@ table {
 }
 
 /** Smaller screen adjustments **/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .wrapper {
         padding-left: 5px;
         padding-right: 5px;
+        width: 100%;
     }
 
     /* Text settings */
@@ -539,7 +540,16 @@ table {
 
     /* Dropdown menu settings */
     #dropdown-icon {
-        font-size: 3em;
+        font-size: 2em;
+    }
+
+    #logo h1{
+        letter-spacing: 0.5em;
+        font-size: 1em;
+    }
+
+    #header-text h2{
+        font-size: 1em;
     }
 
     /* Footer settings */
