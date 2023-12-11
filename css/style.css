@@ -583,6 +583,6 @@ table {
     /* Sightseeing page */
 
     #sightseeing-small-block {
-        width: 100%;
+        flex-basis: 100%;
     }
 }
