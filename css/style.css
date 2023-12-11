@@ -7,6 +7,9 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-size: cover;
     background-color: rgb(197, 161, 146);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Basic font settings */
@@ -49,6 +52,8 @@ h2 {
 
     padding-right: 10px;
     padding-left: 10px;
+
+    flex: 1 1 auto; /*grow vertically*/
 }
 
 /* Header */
@@ -147,7 +152,8 @@ nav:hover .dropdown-content {
 /* Footer settings*/
 footer {
     padding: 40px;
-    flex-shrink: 0;
+    bottom: 0;
+    position: static;
 }
 
 footer #footer-links {
@@ -370,6 +376,14 @@ table {
     color: white;
 }
 
+.expandable-header-right {
+    flex: 2;
+    text-align: right;
+    margin: 0;
+    min-width: 0;
+    height: 100%;
+}
+
 .expandable-header-left {
     flex: 1;
     display: flex;
@@ -380,6 +394,16 @@ table {
     max-height: 30%;
 }
 
+.expandable-header-vertical {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    min-width: 0;
+    max-height: 30%;
+    flex-direction: column;
+    display: flex;
+}
+
 #event-date {
     margin-top: 0;
     margin-bottom: 0;
@@ -388,14 +412,6 @@ table {
 #event-name {
     margin-left: 5%;
     margin-right: 5%;
-}
-
-.expandable-header-right {
-    flex: 2;
-    text-align: right;
-    margin: 0;
-    min-width: 0;
-    height: 100%;
 }
 
 .event-image {
@@ -434,6 +450,23 @@ table {
 .active,
 .expandable-items:hover {
     filter: brightness(90%)
+}
+
+/**** Sightseeing page ****/
+
+#sightseeing-small-block {
+    width: 50%;
+    float: left;
+    overflow: visible;
+    padding: auto;
+}
+
+#sightseeing-small-block p {
+    column-count: 1;
+}
+
+#flex-1-item {
+    flex: 1;
 }
 
 /**** Sports page ****/
@@ -477,14 +510,6 @@ table {
 #history-content div img {
     width: 100%;
     padding: 15px 0;
-}
-
-/**** Sightseeing page ****/
-
-#sightseeing-small-block {
-    width: 50%;
-    float: left;
-    overflow: visible;
 }
 
 /** Smaller screen adjustments **/
@@ -542,5 +567,11 @@ table {
     #history-content div {
         padding: 5px 15px;
         border-radius: 15px;
+    }
+
+    /* Sightseeing page */
+
+    #sightseeing-small-block {
+        width: 100%;
     }
 }
