@@ -119,6 +119,7 @@ nav a {
     border: none;
     outline: none;
     margin-right: 0.2em;
+    cursor: pointer;
 }
 
 .dropdown-content {
@@ -361,7 +362,6 @@ table {
 }
 
 .expandable-item-header {
-    cursor: pointer;
     cursor: pointer;
     border: none;
     border-radius: 8px;
