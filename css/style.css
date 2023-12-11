@@ -97,6 +97,8 @@ header {
 #header-text {
     font-style: italic;
     font-weight: lighter;
+    margin-top:auto;
+    margin-bottom: auto;
 }
 
 /* Header navigation dropdown menu */
