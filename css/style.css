@@ -159,7 +159,7 @@ nav:hover .dropdown-content {
 footer {
     padding: 40px;
     bottom: 0;
-    position: static;
+    clear:both;
 }
 
 footer #footer-links {
@@ -299,7 +299,6 @@ a:active {
     width: 400pt;
     height: 300pt;
     border: 1px solid white;
-
 }
 
 /* container of a flipping card */
@@ -313,7 +312,7 @@ a:active {
     transform-style: preserve-3d;
 }
 
-/* do an action when a coursour is on a flipping card */
+/* do an action when a cursor is on a flipping card */
 #home-links .card2:hover .flip-box-inner {
     transform: rotateY(180deg);
 }
@@ -336,20 +335,28 @@ a:active {
 }
 /* front of flipping cards on index page */
 #home-links .flip-box-front {
-    background-color: #bbb;
     color: black;
 }
 /* back of a card */
 #home-links .flip-box-back {
-    background-color: #555;
-    color: white;
     transform: rotateY(180deg);
+}
+
+.blurred {
+    filter: blur(3px);
+}
+
+.flip-box-back a{
+    height:100%;
+    line-height: 100%;
+    width:100%;
+    text-align: center;
+    background-color: transparent;
 }
 /* front of flipping cards on foodanddrinks page */
 
 #home-links .flip-food-box-back {
     text-align: center;
-
     background-color: #e28570;
     color: white;
     transform: rotateY(180deg);
