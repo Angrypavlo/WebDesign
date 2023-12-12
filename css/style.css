@@ -630,6 +630,11 @@ td {
         column-count: 1;
     }
 
+    h1,
+    h2 {
+        font-size: 1em;
+    }
+
     /* Dropdown menu settings */
     #dropdown-icon {
         font-size: 2em;
@@ -637,11 +642,6 @@ td {
 
     #logo h1 {
         letter-spacing: 0.5em;
-        font-size: 1em;
-    }
-
-    #header-text h2 {
-        font-size: 1em;
     }
 
     /* Footer settings */
