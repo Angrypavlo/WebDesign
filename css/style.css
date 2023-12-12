@@ -99,7 +99,7 @@ header {
 #header-text {
     font-style: italic;
     font-weight: lighter;
-    margin-top:auto;
+    margin-top: auto;
     margin-bottom: auto;
 }
 
@@ -249,10 +249,12 @@ a:active {
     position: relative;
     text-align: center;
 }
+
 #home-links p {
-    text-align: center; 
+    text-align: center;
     column-count: 1;
-    max-width: 100%; /* Ensure text doesn't overflow */
+    max-width: 100%;
+    /* Ensure text doesn't overflow */
 }
 
 
@@ -277,6 +279,15 @@ a:active {
     height: 100%;
 }
 
+a.fill-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
 #home-links .card1 {
     /* Card 1 means smaller card */
     background-color: transparent;
@@ -292,6 +303,7 @@ a:active {
     height: 200px;
     border: 1px solid #f1f1f1;
 }
+
 /* the food cards in foodanddrinks page */
 #home-links .food-card {
     cursor: pointer;
@@ -328,24 +340,27 @@ a:active {
 
 #home-links .flip-box-front,
 #home-links .flip-box-back,
-#home-links .flip-food-box-back{
+#home-links .flip-food-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
+
 /* front of flipping cards on index page */
 #home-links .flip-box-front {
     background-color: #bbb;
     color: black;
 }
+
 /* back of a card */
 #home-links .flip-box-back {
     background-color: #555;
     color: white;
     transform: rotateY(180deg);
-    
+
 }
+
 /* front of flipping cards on foodanddrinks page */
 
 #home-links .flip-food-box-back {
@@ -354,7 +369,7 @@ a:active {
     background-color: #e28570;
     color: white;
     transform: rotateY(180deg);
-    overflow:scroll
+    overflow-y: scroll;
 }
 
 /* Rules for creating tables*/
@@ -449,7 +464,6 @@ table {
     max-width: 100%;
     height: 30%;
     vertical-align: bottom;
-    border: 5px solid #b8624f;
 }
 
 .expanded-event-container {
@@ -457,7 +471,6 @@ table {
     background-color: rgba(230, 208, 198);
     border-radius: 0 0 8px 8px;
     overflow: hidden;
-
     margin-block-start: 0em;
     margin-block-end: 0em;
     transition: max-height 0.2s ease-out;
@@ -487,7 +500,7 @@ table {
 #sightseeing-small-block {
     float: left;
     overflow: visible;
-    flex:1;
+    flex: 1;
     flex-basis: 45%;
 }
 
@@ -509,6 +522,7 @@ table {
     gap: 20px;
     align-items: stretch;
 }
+
 /**** Accommodation page ****/
 
 .accommodation-item {
@@ -531,46 +545,48 @@ table {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+}
 
-  .accommodation-item  table {
+.accommodation-item table {
     border-collapse: collapse;
     width: 70%;
     margin: 20px auto;
     border: 2px solid #333;
     background-color: #fff;
-  }
+}
 
-  .accommodation-item caption {
+.accommodation-item caption {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     padding: 10px;
     color: #333;
-  }
+}
 
-  .accommodation-item th, td {
+.accommodation-item th,
+td {
     border: 1px solid #000000;
     text-align: left;
     font-size: large;
     padding: 12px;
-  }
+}
 
-  .accommodation-item th {
+.accommodation-item th {
     background-color: #333;
     color: #fff;
-  }
+}
 
-  .accommodation-item tr:nth-child(even) {
+.accommodation-item tr:nth-child(even) {
     background-color: #e460248c;
-  }
-  .accommodation-item tr:nth-child(odd) {
-    background-color: #b86350;
-  }
+}
 
-  .accommodation-item tr:hover {
+.accommodation-item tr:nth-child(odd) {
+    background-color: #b86350;
+}
+
+.accommodation-item tr:hover {
     background-color: #d87862;
-  }
+}
 
 
 
@@ -619,12 +635,12 @@ table {
         font-size: 2em;
     }
 
-    #logo h1{
+    #logo h1 {
         letter-spacing: 0.5em;
         font-size: 1em;
     }
 
-    #header-text h2{
+    #header-text h2 {
         font-size: 1em;
     }
 
