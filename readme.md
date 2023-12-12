@@ -1,13 +1,4 @@
-# Moritz
-- Main
-- History
-- Sports
+Web Design course project: Website introducing Kaunas.
+Github link: https://github.com/Angrypavlo/WebDesign
 
-# Ines
-- Main
-- Events
-- Sightseeing
-
-# Pavlo
-- Accommodation
-- Transport
+Authors: Moritz, Ines, Pavlo
