@@ -344,6 +344,7 @@ a:active {
     background-color: #555;
     color: white;
     transform: rotateY(180deg);
+    
 }
 /* front of flipping cards on foodanddrinks page */
 
@@ -353,6 +354,7 @@ a:active {
     background-color: #e28570;
     color: white;
     transform: rotateY(180deg);
+    overflow:scroll
 }
 
 /* Rules for creating tables*/
