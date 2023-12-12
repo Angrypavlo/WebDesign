@@ -284,7 +284,7 @@ a.fill-div {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width:100%;
+    width: 100%;
     text-decoration: none;
 }
 
@@ -464,7 +464,6 @@ table {
     max-width: 100%;
     height: 30%;
     vertical-align: bottom;
-    border: 5px solid #b8624f;
 }
 
 .expanded-event-container {
@@ -472,7 +471,6 @@ table {
     background-color: rgba(230, 208, 198);
     border-radius: 0 0 8px 8px;
     overflow: hidden;
-
     margin-block-start: 0em;
     margin-block-end: 0em;
     transition: max-height 0.2s ease-out;
