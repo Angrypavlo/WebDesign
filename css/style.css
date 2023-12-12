@@ -55,6 +55,7 @@ h2 {
 
     flex: 1 1 auto;
     /*grow vertically*/
+    background-color: rgba(230, 208, 198)
 }
 
 /* Header */
@@ -66,7 +67,8 @@ header {
     top: 0;
     background-color: rgba(230, 208, 198);
     text-align: center;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 /* Header logo */
@@ -232,6 +234,7 @@ a:active {
 
 /** Flipping cards with links **/
 #home-links {
+    cursor: pointer;
     background-color: #b8624f;
     display: flex;
     flex-wrap: wrap;
@@ -571,10 +574,11 @@ table {
 }
 
 #food-links .card1 {
+    cursor: pointer;
     background-color: transparent;
     width: 400pt;
     height: 300pt;
-    border: 1px solid #000000;
+    border: 1px solid white;
 
 }
 
