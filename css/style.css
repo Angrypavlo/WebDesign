@@ -587,20 +587,6 @@ table {
 }
 
 /**** About Kaunas (History) page ****/
-#history-content img {
-    width: 50%;
-}
-
-.img-left {
-    float: left;
-    margin: 10px 20px 5px 0px;
-}
-
-.img-right {
-    float: right;
-    margin: 10px 0px 5px 20px;
-}
-
 #history-content div {
     background-color: #b8624f;
     padding: 10px 35px;
