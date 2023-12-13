@@ -683,8 +683,12 @@ td {
     }
 
     /* Sightseeing page */
-
     #sightseeing-small-block {
         flex-basis: 100%;
+    }
+
+    /* Accommodation page */
+    .accommodation-item caption {
+        font-size: 1em;
     }
 }
