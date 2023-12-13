@@ -561,6 +561,7 @@ table {
     text-align: center;
     padding: 10px;
     color: #333;
+    text-transform: uppercase;
 }
 
 .accommodation-item th,
