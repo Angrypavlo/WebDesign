@@ -449,12 +449,12 @@ table {
     min-width: 0;
 }
 
-#event-date {
+.event-date {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-#event-name {
+.event-name {
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -497,18 +497,18 @@ table {
 
 /**** Sightseeing page ****/
 
-#sightseeing-small-block {
+.sightseeing-small-block {
     float: left;
     overflow: visible;
     flex: 1;
     flex-basis: 45%;
 }
 
-#sightseeing-small-block p {
+.sightseeing-small-block p {
     column-count: 1;
 }
 
-#flex-1-item {
+.flex-1-item {
     flex: 1;
 }
 
@@ -683,7 +683,7 @@ td {
     }
 
     /* Sightseeing page */
-    #sightseeing-small-block {
+    .sightseeing-small-block {
         flex-basis: 100%;
     }
 
